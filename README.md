@@ -24,9 +24,9 @@ _Pantalla principal ganador_
 image 4
 ###  Modo de juego 
 El juego inicia registrando a todos los participantes y mostrando los en la pantalla principal
-image 5
+
 inicia la ronda cronometrada de 15 segundos, y en cada interfaz individual va a salir una pregunta
-image6
+
 - Si la respuesta es correcta, se sumará una cantidad (95.000 respuesta respondida en los primeros 5 segundos, 70.000 entre 5 y 10 segundos, 50.000 más de 10 segundos) al total general
 - Si la respuesta es incorrecta o no responde, se borrará el total acumulado
 
