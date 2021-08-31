@@ -46,6 +46,10 @@ Ofrece entretenimiento y pone a prueba tus conocimientos de cultura general, ade
 Ofrecer una version del juego a tiempo real, utilizando medios digitales, ademas de modificar y añadir reglas que creemos haran el juego mas emocionante y divertido
 
 
+## Historias de usuario
+![Screenshot](img/historiausuario.jpeg)
+NOTA: Puede verlas en mas profundidad en el archivo _proyecto.asta_
+
 
 
 
