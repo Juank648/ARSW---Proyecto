@@ -15,11 +15,11 @@ acumulado, al final de una ronda, se va eliminando por votación al rival más d
 Juego Basado en el programa de concursos "El rival más débil". 
 ### Interfaz 
 _Pantalla de registro_
-image 1
+![Screenshot](img/pantallacarga.png)
 _Pantalla principal_
 image 2
 _Interfaz individual de cada jugador_
-image 3
+![Screenshot](img/pantallaindi.png)
 _Pantalla principal ganador_
 image 4
 ###  Modo de juego 
