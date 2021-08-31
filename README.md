@@ -15,18 +15,18 @@ acumulado, al final de una ronda, se va eliminando por votación al rival más d
 Juego Basado en el programa de concursos "El rival más débil". 
 ### Interfaz 
 _Pantalla de registro_
-image 1
+![Screenshot](img/pantallacarga.png)
 _Pantalla principal_
 image 2
 _Interfaz individual de cada jugador_
-image 3
+![Screenshot](img/pantallaindi.png)
 _Pantalla principal ganador_
 image 4
 ###  Modo de juego 
 El juego inicia registrando a todos los participantes y mostrando los en la pantalla principal
-image 5
+
 inicia la ronda cronometrada de 15 segundos, y en cada interfaz individual va a salir una pregunta
-image6
+
 - Si la respuesta es correcta, se sumará una cantidad (95.000 respuesta respondida en los primeros 5 segundos, 70.000 entre 5 y 10 segundos, 50.000 más de 10 segundos) al total general
 - Si la respuesta es incorrecta o no responde, se borrará el total acumulado
 
@@ -45,6 +45,10 @@ Ofrece entretenimiento y pone a prueba tus conocimientos de cultura general, ade
 ### Valor agregado
 Ofrecer una version del juego a tiempo real, utilizando medios digitales, ademas de modificar y añadir reglas que creemos haran el juego mas emocionante y divertido
 
+
+## Historias de usuario
+![Screenshot](img/historiausuario.jpeg)
+NOTA: Puede verlas en mas profundidad en el archivo _proyecto.asta_
 
 
 
