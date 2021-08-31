@@ -1,4 +1,4 @@
-# ARSW---Proyecto
+# ARSW --- ¡Responde o largate!
 
 ## Integrantes 
 - Juan Carlos Alayon
