@@ -17,10 +17,10 @@ Juego Basado en el programa de concursos "El rival más débil".
 _Pantalla de registro_
 ![Screenshot](img/pantallacarga.png)
 _Pantalla principal_
-image 2
+![Screenshot](img/pantallaprin.png)
 _Interfaz individual de cada jugador_
 ![Screenshot](img/pantallaindi.png)
-_Pantalla principal ganador_
+
 image 4
 ###  Modo de juego 
 El juego inicia registrando a todos los participantes y mostrando los en la pantalla principal
