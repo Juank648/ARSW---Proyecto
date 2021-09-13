@@ -6,7 +6,7 @@
 - Brayan Andres Macias
 
 ## Resumen
-Nombre del juego es un videojuego basado en el programa de concursos "El rival más débil", en el que varios jugadores compiten 
+¡Responde o largate! es un videojuego basado en el programa de concursos "El rival más débil", en el que varios jugadores compiten 
 resolviendo preguntas de cultura general en un tiempo estipulado, para así recolectar dinero, el juego se divide en varias rondas
 en donde en cada una, los jugadores van respondiendo y por cada respuesta correcta va sumando a un total, si un jugador falla se borra el total
 acumulado, al final de una ronda, se va eliminando por votación al rival más débil, hasta que solo quede un jugador en pie.
