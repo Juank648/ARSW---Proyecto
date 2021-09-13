@@ -47,8 +47,7 @@ Ofrecer una version del juego a tiempo real, utilizando medios digitales, ademas
 
 
 ## Historias de usuario
-![Screenshot](img/historiausuario.jpeg)
-NOTA: Puede verlas en mas profundidad en el archivo _proyecto.asta_
+https://tree.taiga.io/project/brayandres-arsw-project-2021/backlog
 
 
 
