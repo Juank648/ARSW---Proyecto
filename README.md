@@ -37,7 +37,7 @@ _Reglas a considerar_
 - Si en una ronda se decide guardar en el banco, la próxima ronda tendrá 5 segundos de penalización 
 - El dinero en el banco no se pierde por respuestas erróneas 
 - Cuando un jugador falle o no responda, saldrá su nombre en la pantalla de otros jugadores 
-- Cuando solo queden dos jugadores perderá automáticamente el que falle la pregunta o quien tarde más tiempo en contestar
+- Cuando solo queden dos jugadores sera ha muerte subita
 
 ### Problema que resuelve
 Ofrece entretenimiento y pone a prueba tus conocimientos de cultura general, además de aprender algunos datos que no sabias
