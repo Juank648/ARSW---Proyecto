@@ -6,7 +6,7 @@
 - Brayan Andres Macias
 
 ## Resumen
-Nombre del juego es un videojuego basado en el programa de concursos "El rival más débil", en el que varios jugadores compiten 
+¡Responde o largate! es un videojuego basado en el programa de concursos "El rival más débil", en el que varios jugadores compiten 
 resolviendo preguntas de cultura general en un tiempo estipulado, para así recolectar dinero, el juego se divide en varias rondas
 en donde en cada una, los jugadores van respondiendo y por cada respuesta correcta va sumando a un total, si un jugador falla se borra el total
 acumulado, al final de una ronda, se va eliminando por votación al rival más débil, hasta que solo quede un jugador en pie.
@@ -17,10 +17,10 @@ Juego Basado en el programa de concursos "El rival más débil".
 _Pantalla de registro_
 ![Screenshot](img/pantallacarga.png)
 _Pantalla principal_
-image 2
+![Screenshot](img/pantallaprin.png)
 _Interfaz individual de cada jugador_
 ![Screenshot](img/pantallaindi.png)
-_Pantalla principal ganador_
+
 image 4
 ###  Modo de juego 
 El juego inicia registrando a todos los participantes y mostrando los en la pantalla principal
@@ -37,7 +37,7 @@ _Reglas a considerar_
 - Si en una ronda se decide guardar en el banco, la próxima ronda tendrá 5 segundos de penalización 
 - El dinero en el banco no se pierde por respuestas erróneas 
 - Cuando un jugador falle o no responda, saldrá su nombre en la pantalla de otros jugadores 
-- Cuando solo queden dos jugadores perderá automáticamente el que falle la pregunta o quien tarde más tiempo en contestar
+- Cuando solo queden dos jugadores sera ha muerte subita
 
 ### Problema que resuelve
 Ofrece entretenimiento y pone a prueba tus conocimientos de cultura general, además de aprender algunos datos que no sabias
@@ -47,8 +47,7 @@ Ofrecer una version del juego a tiempo real, utilizando medios digitales, ademas
 
 
 ## Historias de usuario
-![Screenshot](img/historiausuario.jpeg)
-NOTA: Puede verlas en mas profundidad en el archivo _proyecto.asta_
+https://tree.taiga.io/project/brayandres-arsw-project-2021/backlog
 
 
 
