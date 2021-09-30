@@ -1,6 +1,0 @@
-edu\eci\arsw\project\controllers\ResourceNotFoundException.class
-edu\eci\arsw\project\ProjectApplication.class
-edu\eci\arsw\project\persistence\ProjectPersistence.class
-edu\eci\arsw\project\service\ProjectService.class
-edu\eci\arsw\project\controllers\ProjectAPIController.class
-edu\eci\arsw\project\model\Project.class
