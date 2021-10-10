@@ -67,3 +67,6 @@ header{
 #new-room-button:hover{
     background: #d40000;
 }
+#canvasConfetti{
+    display: block;
+}
