@@ -16,4 +16,8 @@ public class Player extends User {
     public void voteBankOption() {
 
     };
+
+    public int getScore() {
+        return score;
+    }
 }
