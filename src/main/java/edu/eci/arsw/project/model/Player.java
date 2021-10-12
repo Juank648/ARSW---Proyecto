@@ -8,8 +8,8 @@ import javax.persistence.Table;
 public class Player extends User {
     public int totalScore;
 
-    public Player(String role, String nickname) {
-        super(role, nickname);
+    public Player(String nickname) {
+        super(nickname);
     }
 
     public Player() {
