@@ -1,12 +1,28 @@
 package edu.eci.arsw.project.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="creators")
 public class Creator extends User{
 
+    @Column
     public String mail;
+    @Column
     public String passwd;
 
-    public Creator(String role, String nickname) {
-        super(role, nickname);
+    public Creator(String nickname, String mail, String passwd) {
+
+        super(nickname);
+        this.mail=mail;
+        this.passwd=passwd;
+    }
+
+    public Creator() {
+
+        super();
     }
 
     public String getMail() {

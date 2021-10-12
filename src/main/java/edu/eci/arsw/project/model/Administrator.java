@@ -1,18 +1,30 @@
 package edu.eci.arsw.project.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
-//@Entity(name="Administrators")
+@Entity
+@Table(name = "administrators")
 public class Administrator extends User{
-    public String mail;
+
+    @Column
+    private String mail;
+    @Column
     public String passwd;
 
 
-    public Administrator(String role, String nickname) {
-        super(role, nickname);
+    public Administrator(String nickname, String mail, String passwd) {
+
+        super(nickname);
+        this.mail=mail;
+        this.passwd=passwd;
+
     }
 
     public Administrator() {
+
+
 
     }
 

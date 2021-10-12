@@ -1,10 +1,20 @@
 package edu.eci.arsw.project.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="players")
 public class Player extends User {
-    public int score;
+    public int totalScore;
 
     public Player(String role, String nickname) {
         super(role, nickname);
+    }
+
+    public Player() {
+
+        super();
     }
 
     public void makeEliminationVote(String player){
@@ -18,6 +28,6 @@ public class Player extends User {
     };
 
     public int getScore() {
-        return score;
+        return totalScore;
     }
 }

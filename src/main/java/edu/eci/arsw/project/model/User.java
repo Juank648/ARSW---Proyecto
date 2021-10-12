@@ -1,17 +1,20 @@
 package edu.eci.arsw.project.model;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-//@Entity(name = "users")
+@Entity
+@Table(name ="users")
 public class User {
+    @Id
     public int id;
-    public String role;
+    @Column
     public String nickname;
 
-    public User(String role, String nickname) {
-        this.role = role;
+    public User(String nickname) {
         this.nickname = nickname;
     }
 
@@ -19,13 +22,6 @@ public class User {
 
     }
 
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
 
     public String getNickname() {
         return nickname;
