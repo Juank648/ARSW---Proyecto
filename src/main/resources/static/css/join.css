@@ -1,0 +1,105 @@
+body {
+	background-image: linear-gradient(to right top, #96f4c3, #7ff3b5, #67f2a5, #4bf095, #21ee83);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+* {
+    font-family: arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+
+/* -------------------------------- BODY ELEMENTS -------------------------------- */
+
+#color-container {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    background-color: white;
+    display: block;
+}
+
+#div-text {
+    display: flex;
+    margin-top: 1%;
+    justify-content: center;
+}
+
+#msg-code {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#inputPreview {
+    display: flex;
+    justify-content: center;
+}
+
+#inputCode {
+    margin-top: 4%;
+}
+
+#div-warning {
+    display: flex;
+    justify-content: center;
+}
+
+#msg-warning {
+    color: red;
+    font-weight: bold;
+}
+
+#btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+#bt-join {background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%)}
+#bt-join {
+    margin-bottom: 2%;
+    border: none;
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;        
+    box-shadow: 0 0 20px #eee;
+    border-radius: 6px;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#bt-join:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+         
+#inputCode {
+    text-align:center;
+    border-style:solid;
+    font-size:2rem;
+    font-weight:bold;
+    font-style:none;
+    font-family:monospace;
+    background-color:#ffffff;
+    border-color:#000000;
+    border-width:2px;
+    padding:6px;
+    border-radius:5px;
+    color:#000000;
+}
