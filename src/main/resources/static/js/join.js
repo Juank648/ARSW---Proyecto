@@ -5,18 +5,18 @@ var joinApi = (function() {
 	function _checkCodeValidity(code) {
 		console.log("Entra a checkCode");
 		if (code == "") {
-			console.log("    Entra al else if");
+			console.log("    Entra al primer if");
 			$("#msg-warning").text("Inserte un código");
 			return false;
 		}
 		let value = parseInt(code);
 		if (Number.isInteger(value)) {
-			console.log("    Entra al else");
-			$("#msg-warning").text("");
+			console.log("    Entra al segundo if");
+			$("#msg-warning").text(" ");
 			return true;
 		}
 		else {
-			console.log("    Entra al if");
+			console.log("    Entra al else");
 			$("#msg-warning").text("El código debe ser un número de 6 dígitos");
 			return false;
 		}
@@ -27,7 +27,7 @@ var joinApi = (function() {
 		promise.then(
 			function(data) {
 				alert("Se ha unido a la sala "+data);
-				window.location = "userPreparation.html";
+				window.location = "waitingRoom.html";
 			},
 			function() {
 				alert("No ha sido posible conectarse a la sala")
