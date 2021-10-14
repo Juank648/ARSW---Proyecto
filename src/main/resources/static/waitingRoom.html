@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<!--===================================================-->
+
+<head>
+	<title>Sala de espera</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/waitingRoom.css">
+    <script src="js/waitingRoom.js"></script>
+</head>
+
+<!------------------------------------------------------->
+
+<body>
+	<div class="shape" id="header">
+		<div id="logo-container"><a href=""><img id="logo" src="svg/logo.svg" alt="Logo de Responde o Largate"></a></div>
+	</div>
+	<div class="shape" id="header-line"></div>
+	<div class="shape" id="black-circle"></div>
+	<div class="shape" id="separator"></div>
+	<p id="msg-name">INGRESA TU NOMBRE</p>
+	<input id="inputName" type="text" name="textName" placeholder="Tu nombre" />
+	<div id="select-pos">
+		<div id="select-container">
+			<p id="msg-slect">ELIGE UN ÁVATAR!</p>
+		</div>
+	</div>
+	<div id="ready-container">
+		<button class="button" id="btn-ready" type="button" onclick="roomApp.getReady()">ESTOY LISTO!</button>
+	</div>
+	<div class="container" id="container-characters">
+		<div id="img-1st-row">
+			<img class="char-img" src="img/chars/Char0.png" id="Char0_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char1.png" id="Char1_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char2.png" id="Char2_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char3.png" id="Char3_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char4.png" id="Char4_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char5.png" id="Char5_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char6.png" id="Char6_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char7.png" id="Char7_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char8.png" id="Char8_Img" onclick=""/>
+		</div>
+		<div id="img-2nd-row">
+			<img class="char-img" src="img/chars/Char9.png" id="Char9_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char10.png" id="Char10_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char11.png" id="Char11_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char12.png" id="Char12_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char13.png" id="Char13_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char14.png" id="Char14_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char15.png" id="Char15_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char16.png" id="Char16_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char17.png" id="Char17_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char18.png" id="Char18_Img" onclick=""/>
+		</div>
+		<div id="img-3rd-row">
+			<img class="char-img" src="img/chars/Char19.png" id="Char19_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char20.png" id="Char20_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char21.png" id="Char21_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char22.png" id="Char22_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char23.png" id="Char23_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char24.png" id="Char24_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char25.png" id="Char25_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char26.png" id="Char26_Img" onclick=""/>
+			<img class="char-img" src="img/chars/Char27.png" id="Char27_Img" onclick=""/>
+		</div>
+	</div>
+</body>
+
+<!--===================================================-->
+
+</html>
