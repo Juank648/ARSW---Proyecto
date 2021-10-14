@@ -6,13 +6,20 @@
 }
 
 body{
-    background: chartreuse;
-    font-family: Arial, fantasy;
+    background-image: linear-gradient(to right bottom, #0c2851, #003f63, #00556c, #006a6e, #387e6c);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
 }
 
 #container{
-    width: 80%;
-    height: 80%;
+    height: 85%;
+    width: 60%;
     margin: 0px auto;
 
 }
@@ -25,45 +32,63 @@ header{
 #logo{
     display:block;
     margin:auto;
-    margin-top: 20%;
+    margin-top: 25%;
 }
 
 #initial-buttons{
     margin-top: 5%;
-
     text-align: center;
+    margin-bottom: 32%;
+}
+
+button{
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    border: none;
+    background-size: 200% auto;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+button:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+#new-room-button{
+    margin-left: 15px;
 }
 #room-button{
     margin-right: 15px;
-    background: red;
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    color: white;
-    font-family: Calibri;
-    font-size: x-large;
-    padding: 5px 20px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+}
 
-}
-#room-button:hover{
-    background: #d40000;
-
-}
-#new-room-button{
-    margin-left: 15px;
-    background: red;
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
+#bt-join {background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%)}
+#bt-join {
+    margin-bottom: 2%;
+    border: none;
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
     color: white;
-    font-family: Calibri;
-    font-size: x-large;
-    padding: 5px 20px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 6px;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
 }
-#new-room-button:hover{
-    background: #d40000;
+#bt-join:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
 }
