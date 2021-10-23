@@ -1,12 +1,12 @@
 body {
-	background-image: linear-gradient(to right top, #4aaeae, #1eb6a9, #00bd9c, #00c388, #0dc86e);
+	background-image: linear-gradient(to right bottom, #321a89, #451a8b, #561b8d, #641b8f, #721c90);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
 
 * {
-    font-family: arial, sans-serif;
+    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
 body, html {
@@ -35,7 +35,6 @@ body, html {
 }
 
 #msg-code {
-    font-family: sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 2rem;
@@ -81,7 +80,6 @@ body, html {
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: sans-serif;
 }
 #bt-join:hover {
     background-position: right center;
