@@ -3,6 +3,8 @@ package edu.eci.arsw.project.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+import java.util.Objects;
 
 @Entity
 @Table(name = "administrators")
@@ -11,7 +13,9 @@ public class Administrator extends User{
     @Column
     private String mail;
     @Column
-    public String passwd;
+    private String passwd;
+    @Transient
+    private String confirmPasswd;
 
 
     public Administrator(String nickname, String mail, String passwd) {
@@ -23,9 +27,6 @@ public class Administrator extends User{
     }
 
     public Administrator() {
-
-
-
     }
 
     public String getMail() {
@@ -42,5 +43,38 @@ public class Administrator extends User{
 
     public void setPasswd(String passwd) {
         this.passwd = passwd;
+    }
+
+    public String getConfirmPasswd() {
+        return confirmPasswd;
+    }
+
+    public void setConfirmPasswd(String confirmPasswd) {
+        this.confirmPasswd = confirmPasswd;
+    }
+
+    @Override
+    public String toString() {
+        return "Administrator{" +
+                "mail='" + mail + '\'' +
+                ", passwd='" + passwd + '\'' +
+                ", confirmPasswd='" + confirmPasswd + '\'' +
+                ", id=" + id +
+                ", nickname='" + nickname + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Administrator that = (Administrator) o;
+        return mail.equals(that.mail) && passwd.equals(that.passwd) && confirmPasswd.equals(that.confirmPasswd);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), mail, passwd, confirmPasswd);
     }
 }
