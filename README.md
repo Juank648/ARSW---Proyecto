@@ -11,6 +11,12 @@ resolviendo questions de cultura general en un tiempo estipulado, para así reco
 en donde en cada una, los jugadores van respondiendo y por cada respuesta correcta va sumando a un total, si un jugador falla se borra el total
 acumulado, al final de una ronda, se va eliminando por votación al rival más débil, hasta que solo quede un jugador en pie.
 
+## Pagina Web 📦
+[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://responde-o-largate.herokuapp.com/)
+
+## Circle Ci 🔧
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/Juank648/ARSW---Proyecto)
+
 ## Descripción 
 Juego Basado en el programa de concursos "El rival más débil". 
 ### Interfaz 
