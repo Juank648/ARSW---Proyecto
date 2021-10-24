@@ -29,4 +29,8 @@ public class ProjectAPIController {
 			return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
 		}
 	}
+	@RequestMapping(method = RequestMethod.GET)
+	public ResponseEntity<?> GetAllUsers(){
+		return new ResponseEntity<>(ps.getAllUsers(),HttpStatus.ACCEPTED);
+	}
 }
