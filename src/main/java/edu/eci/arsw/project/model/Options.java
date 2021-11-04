@@ -1,36 +1,78 @@
 package edu.eci.arsw.project.model;
 
+import javax.persistence.*;
+import java.util.Objects;
+
+@Entity
+@Table(name="options")
 public class Options {
-    public String Description;
-    public Question question;
-    public Boolean correct;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public int id;
+    @ManyToOne
+    @JoinColumn(name = "id")
+    private Question idquestion;
+    @Column
+    public String option;
+    @Column
+    private boolean correct;
 
-    public Options(String description, Question question) {
-        Description = description;
-        this.question = question;
+    public Options(Question question) {
+        this.idquestion = question;
     }
 
-    public String getDescription() {
-        return Description;
+    public Options() {
+
     }
 
-    public void setDescription(String description) {
-        Description = description;
+    public int getId() {
+        return id;
     }
 
-    public Question getPregunta() {
-        return question;
+    public Question getQuestion() {
+        return idquestion;
     }
 
-    public void setPregunta(Question question) {
-        this.question = question;
+    public String getOption() {
+        return option;
     }
 
-    public Boolean getIscorrect() {
+    public boolean isCorrect() {
         return correct;
     }
 
-    public void setIscorrect(Boolean iscorrect) {
-        this.correct = iscorrect;
+    public void setQuestion(Question question) {
+        this.idquestion = question;
+    }
+
+    public void setOption(String option) {
+        this.option = option;
+    }
+
+    public void setCorrect(boolean correct) {
+        this.correct = correct;
+    }
+
+    @Override
+    public String toString() {
+        return "Options{" +
+                "id=" + id +
+                ", question=" + idquestion +
+                ", option='" + option + '\'' +
+                ", correct=" + correct +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Options options = (Options) o;
+        return id == options.id && correct == options.correct && idquestion.equals(options.idquestion) && option.equals(options.option);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, idquestion, option, correct);
     }
 }

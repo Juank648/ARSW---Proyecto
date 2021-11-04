@@ -1,37 +1,22 @@
 package edu.eci.arsw.project.model;
 
+import javax.persistence.*;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
+@Entity
+@Table(name ="questions")
 public class Question {
-    public String description;
-    public Theme theme;
-    public List<Options> options;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public int id;
+    @OneToMany(mappedBy = "questions")
+    private HashSet<Options> options = new HashSet<>();;
+    @Column
+    public String question;
+    @ManyToOne
+    @JoinColumn(name = "topic")//Revisar nombre, según ejemplo va el nombre del PK de Topic
+    private Topic topic;
 
-    public Question() {
-
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Theme getTema() {
-        return theme;
-    }
-
-    public void associatedtheme(Theme theme) {
-        this.theme = theme;
-    }
-
-    public List<Options> getRespuestas() {
-        return options;
-    }
-
-    public void setRespuestas(List<Options> options) {
-        this.options = options;
-    }
 }

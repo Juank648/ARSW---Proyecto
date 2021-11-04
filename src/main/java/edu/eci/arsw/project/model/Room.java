@@ -6,7 +6,7 @@ public class Room {
     public String name;
     public List<Player> players;
     public User manager;
-    public List<Theme> themes;
+    public List<Topic> themes;
 
     public void addPlayer() {
 

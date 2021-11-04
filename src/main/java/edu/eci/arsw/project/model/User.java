@@ -7,9 +7,11 @@ import java.util.Objects;
 
 @Entity
 @Table(name ="users")
+@Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 public class User{
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int id;
     @Column
     public String nickname;
