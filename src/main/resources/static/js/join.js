@@ -1,6 +1,6 @@
 var joinApi = (function() {
 
-	const PATH = "project/";
+	const PATH = "/project/";
 
 	function _checkCodeValidity(code) {
 		console.log("Entra a checkCode");

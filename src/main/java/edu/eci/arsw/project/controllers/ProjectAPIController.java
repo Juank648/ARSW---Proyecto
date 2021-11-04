@@ -20,7 +20,7 @@ public class ProjectAPIController {
 	@Autowired
 	ProjectService ps = null;
 	
-	@RequestMapping(path="room/{code}", method=RequestMethod.GET)
+	@RequestMapping(path="/room/{code}", method=RequestMethod.GET)
 	public ResponseEntity<?> getRoomName(@PathVariable ("code") String roomCode) {
 		try {
 			return new ResponseEntity<>("Sala de Prueba", HttpStatus.ACCEPTED);
@@ -29,8 +29,14 @@ public class ProjectAPIController {
 			return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
 		}
 	}
-	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(path= "/users/", method = RequestMethod.GET)
 	public ResponseEntity<?> GetAllUsers(){
-		return new ResponseEntity<>(ps.getAllUsers(),HttpStatus.ACCEPTED);
+
+		try {
+			return new ResponseEntity<>(ps.getAllUsers(),HttpStatus.ACCEPTED);
+		} catch (Exception e) {
+			Logger.getLogger(ProjectAPIController.class.getName()).log(Level.SEVERE, null, e);
+			return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+		}
 	}
 }

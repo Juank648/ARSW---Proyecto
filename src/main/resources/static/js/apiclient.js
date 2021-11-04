@@ -1,12 +1,12 @@
-var apiclient = (function () {
+var apiclientAPI = (function () {
     return {
-        getAllUsers: function (callback) {
+        getAllUsersAPI: function (callback) {
+            console.log("Entra a apiclient")
             $.get(
                 {
-                    url: "/project/",
+                    url: "/project/users/",
                     contentType: "application/json",
                 }
-
                 , function (data){
                     console.log("Obtencion de datos")
                     console.log(data);

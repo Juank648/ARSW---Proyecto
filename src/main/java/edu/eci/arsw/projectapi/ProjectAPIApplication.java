@@ -11,7 +11,7 @@ import org.springframework.test.context.ContextConfiguration;
 
 @SpringBootApplication
 //@ComponentScan(basePackages = {"edu.eci.arsw.project"})
-//@EntityScan("edu.eci.arsw.project")
+//@EntityScan("edu.eci.arsw.project.model")
 //@EnableJpaRepositories("edu.eci.arsw.project.persistence.repo")
 public class ProjectAPIApplication {
 

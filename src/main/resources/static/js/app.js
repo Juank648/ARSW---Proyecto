@@ -1,8 +1,8 @@
-var app = ( function () {
+var appAPI = ( function () {
 
     return {
         getUsers: function () {
-            apiclient.getAllUsers(function (error,data){
+            apiclientAPI.getAllUsersAPI(function (error,data){
                 console.log(data);
                 console.log("Datos Obtenidos");
             })
