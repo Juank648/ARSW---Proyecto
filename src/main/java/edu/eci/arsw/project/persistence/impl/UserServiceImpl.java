@@ -8,22 +8,22 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImpl implements ProjectPersistence{
-    final
-    UserREPO userREPO;
-
-    public UserServiceImpl(UserREPO userREPO) {
-        this.userREPO = userREPO;
-    }
+    /*
+    @Autowired
+    private UserREPO userREPO;
+       */
 
     @Override
     public Iterable<User> getAllUsers() {
         System.out.println("<><><><><><><<><><><><><><><><><><><><><><");
-        System.out.println(userREPO.findAll());
-        return userREPO.findAll();
+        //System.out.println(userREPO.findAll());
+        //return userREPO.findAll();
+        return null;
     }
 
     @Override
     public User getUserByNickname(String nickname) {
-        return (User) userREPO.findByNickname(nickname);
+        //return (User) userREPO.findByNickname(nickname);
+        return null;
     }
 }

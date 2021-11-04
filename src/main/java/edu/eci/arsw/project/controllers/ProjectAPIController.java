@@ -33,7 +33,7 @@ public class ProjectAPIController {
 	public ResponseEntity<?> GetAllUsers(){
 
 		try {
-			return new ResponseEntity<>(ps.getAllUsers(),HttpStatus.ACCEPTED);
+			return new ResponseEntity<>("Sala de Prueba",HttpStatus.ACCEPTED);
 		} catch (Exception e) {
 			Logger.getLogger(ProjectAPIController.class.getName()).log(Level.SEVERE, null, e);
 			return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
