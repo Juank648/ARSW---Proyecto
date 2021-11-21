@@ -10,20 +10,14 @@ import java.util.Objects;
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
 public class User{
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public int id;
-    @Column
-    public String nickname;
+    @Column(name = "id", nullable = false)
+    private Integer id;
 
-    public User(String nickname) {
-        this.nickname = nickname;
-    }
-
-    public User() {
-
-    }
-
+    @Column(name = "nickname", nullable = false, length = 20)
+    private String nickname;
 
     public String getNickname() {
         return nickname;
@@ -33,36 +27,11 @@ public class User{
         this.nickname = nickname;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
-    }
-
-    public void setId(Long id) {
-        this.id = Math.toIntExact(id);
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return id == user.id && nickname.equals(user.nickname);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, nickname);
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", nickname='" + nickname + '\'' +
-                '}';
     }
 }

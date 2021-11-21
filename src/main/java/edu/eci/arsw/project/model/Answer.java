@@ -6,26 +6,25 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "rounds")
-public class Round {
-
+@Table(name = "answers")
+public class Answer {
     @Id
-    @Column(name = "number", nullable = false)
+    @Column(name = "idquestion", nullable = false)
     private Integer id;
 
     @Id
-    @Column(name = "coderoom", nullable = false)
+    @Column(name = "idplayer", nullable = false)
     private Integer id1;
 
-    @Column(name = "eliminatedplayer")
-    private Integer eliminatedplayer;
+    @Column(name = "correctanswer", nullable = false)
+    private Boolean correctanswer = false;
 
-    public Integer getEliminatedplayer() {
-        return eliminatedplayer;
+    public Boolean getCorrectanswer() {
+        return correctanswer;
     }
 
-    public void setEliminatedplayer(Integer eliminatedplayer) {
-        this.eliminatedplayer = eliminatedplayer;
+    public void setCorrectanswer(Boolean correctanswer) {
+        this.correctanswer = correctanswer;
     }
 
     public Integer getId1() {

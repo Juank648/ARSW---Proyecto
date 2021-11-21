@@ -8,21 +8,16 @@ import java.util.Set;
 @Entity
 @Table(name ="topics")
 public class Topic {
+
     @Id
-    @Column(name = "name")
-    public String name;
-    @OneToMany(mappedBy = "topics")
-    private HashSet<Question> topics = new HashSet<>();;
+    @Column(name = "name", nullable = false, length = 15)
+    private String id;
 
-
-
-
-
-    public String getName() {
-        return name;
+    public String getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(String id) {
+        this.id = id;
     }
 }

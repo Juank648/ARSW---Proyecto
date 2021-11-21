@@ -8,15 +8,40 @@ import java.util.Set;
 @Entity
 @Table(name ="questions")
 public class Question {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public int id;
-    @OneToMany(mappedBy = "questions")
-    private HashSet<Options> options = new HashSet<>();;
-    @Column
-    public String question;
-    @ManyToOne
-    @JoinColumn(name = "topic")//Revisar nombre, según ejemplo va el nombre del PK de Topic
+    @Column(name = "id", nullable = false)
+    private Integer id;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "topic", nullable = false)
     private Topic topic;
 
+    @Column(name = "question", nullable = false, length = 100)
+    private String question;
+
+    public String getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(String question) {
+        this.question = question;
+    }
+
+    public Topic getTopic() {
+        return topic;
+    }
+
+    public void setTopic(Topic topic) {
+        this.topic = topic;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 }

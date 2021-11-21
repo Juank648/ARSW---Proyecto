@@ -6,73 +6,51 @@ import java.util.Objects;
 @Entity
 @Table(name="options")
 public class Options {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public int id;
-    @ManyToOne
-    @JoinColumn(name = "id")
+    @Column(name = "id", nullable = false)
+    private Integer id;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "idquestion", nullable = false)
     private Question idquestion;
-    @Column
-    public String option;
-    @Column
-    private boolean correct;
 
-    public Options(Question question) {
-        this.idquestion = question;
+    @Column(name = "option", nullable = false, length = 100)
+    private String option;
+
+    @Column(name = "correct", nullable = false)
+    private Boolean correct = false;
+
+    public Boolean getCorrect() {
+        return correct;
     }
 
-    public Options() {
-
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public Question getQuestion() {
-        return idquestion;
+    public void setCorrect(Boolean correct) {
+        this.correct = correct;
     }
 
     public String getOption() {
         return option;
     }
 
-    public boolean isCorrect() {
-        return correct;
-    }
-
-    public void setQuestion(Question question) {
-        this.idquestion = question;
-    }
-
     public void setOption(String option) {
         this.option = option;
     }
 
-    public void setCorrect(boolean correct) {
-        this.correct = correct;
+    public Question getIdquestion() {
+        return idquestion;
     }
 
-    @Override
-    public String toString() {
-        return "Options{" +
-                "id=" + id +
-                ", question=" + idquestion +
-                ", option='" + option + '\'' +
-                ", correct=" + correct +
-                '}';
+    public void setIdquestion(Question idquestion) {
+        this.idquestion = idquestion;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Options options = (Options) o;
-        return id == options.id && correct == options.correct && idquestion.equals(options.idquestion) && option.equals(options.option);
+    public Integer getId() {
+        return id;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, idquestion, option, correct);
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

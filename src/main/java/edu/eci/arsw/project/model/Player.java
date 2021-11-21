@@ -1,56 +1,45 @@
 package edu.eci.arsw.project.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
 @Table(name="players")
 public class Player extends User {
-    @Column
-    public int totalScore;
 
-    public Player(String nickname) {
-        super(nickname);
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false)
+    private Integer id1;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "nickname", nullable = false)
+    private User nickname1;
+
+    @Column(nullable = false)
+    private Integer totalscore;
+
+    public Integer getTotalscore() {
+        return totalscore;
     }
 
-    public Player() {
-        super();
+    public void setTotalscore(Integer totalscore) {
+        this.totalscore = totalscore;
     }
 
-    public void makeEliminationVote(String player){
-
-    };
-    public void changeScore(int quantity){
-
-    };
-    public void voteBankOption() {
-
-    };
-
-    public int getScore() {
-        return totalScore;
+    public User getNickname1() {
+        return nickname1;
     }
 
-    @Override
-    public String toString() {
-        return "Player{" +
-                "totalScore=" + totalScore +
-                '}';
+    public void setNickname1(User nickname1) {
+        this.nickname1 = nickname1;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-        Player player = (Player) o;
-        return totalScore == player.totalScore;
+    public Integer getId1() {
+        return id1;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), totalScore);
+    public void setId1(Integer id1) {
+        this.id1 = id1;
     }
 }
