@@ -13,6 +13,8 @@ public class Administrator extends User{
     @Column(name = "id", nullable = false)
     private Integer id1;
 
+
+
     @ManyToOne(optional = false)
     @JoinColumn(name = "nickname", nullable = false)
     private User nickname1;
