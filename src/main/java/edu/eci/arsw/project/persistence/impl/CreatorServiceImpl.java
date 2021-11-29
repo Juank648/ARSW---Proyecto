@@ -7,6 +7,7 @@ import edu.eci.arsw.project.persistence.repo.HandleREPO;
 import edu.eci.arsw.project.persistence.repo.RoomREPO;
 import edu.eci.arsw.project.persistence.repo.TopicREPO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,12 +16,15 @@ import java.util.Optional;
 @Service("creatorServiceImpl")
 public class CreatorServiceImpl implements CreatorPersistence {
     @Autowired
+    @Qualifier("roomRepository")
     RoomREPO  roomRepository;
 
     @Autowired
+    @Qualifier("handleRepository")
     HandleREPO handleRepository;
 
     @Autowired
+    @Qualifier("topicRepository")
     TopicREPO topicRepository;
 
     @Override

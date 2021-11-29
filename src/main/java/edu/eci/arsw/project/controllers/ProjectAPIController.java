@@ -35,9 +35,9 @@ public class ProjectAPIController {
 			return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
 		}
 	}
-	
+
 	@RequestMapping(path="/topic", method = RequestMethod.GET)
-	public ResponseEntity<> getAllTopics(){
+	public ResponseEntity<?> getAllTopics(){
 		return new ResponseEntity<>(cs.getAllTopics(), HttpStatus.ACCEPTED);
 	}
 

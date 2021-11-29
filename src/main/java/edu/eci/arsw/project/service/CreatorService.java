@@ -5,6 +5,7 @@ import edu.eci.arsw.project.model.Room;
 import edu.eci.arsw.project.model.Topic;
 import edu.eci.arsw.project.persistence.impl.CreatorServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,20 +13,21 @@ import java.util.List;
 @Service("creatorService")
 public class CreatorService {
     @Autowired
-    CreatorServiceImpl service;
+    @Qualifier("creatorServiceImpl")
+    CreatorServiceImpl creatorService;
 
     public Room createRoom(String name, List<Topic> topics, Integer idCreator) throws Exception{
-        return service.createRoom(name, topics, idCreator);
+        return creatorService.createRoom(name, topics, idCreator);
     }
 
     public Room getRoom(String name){
-        return service.getRoom(name);
+        return creatorService.getRoom(name);
     }
     public Iterable<Player> getPlayersInRoom(){
-        return service.getPlayersInRoom();
+        return creatorService.getPlayersInRoom();
     }
     public Iterable<Topic> getAllTopics(){
-        return service.getAllTopics();
+        return creatorService.getAllTopics();
     }
 
 
